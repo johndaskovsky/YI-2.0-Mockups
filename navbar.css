@@ -26,3 +26,9 @@ body {
 .navbar-btn, .navbar-toggle {
     margin-top: 17px;
 }
+
+@media (min-width: 767px) and (max-width: 1200px) {
+    .mobile-nav {
+      display:none;
+    }
+}

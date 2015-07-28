@@ -1,5 +1,6 @@
 body {
   padding-bottom: 20px;
+  /* font-family: 'Montserrat', sans-serif; */
 }
 
 .navbar {
@@ -11,16 +12,19 @@ body {
 .navbar-brand {
     position: absolute;
     left: 50%;
-    margin-left: -135px !important;  /* 50% of your logo width */
-    display: block;
+    margin-left: -110px !important;  /* 50% of your logo width */
+    display:block;
+    padding:12px 10px;
+    height:auto;
+    z-index:100;
 }
 
 .navbar-brand > img {
-  width: 250px;
+  width: 220px;
 }
 
 .navbar-nav > li > a,button {
-    padding-top: 110px;
+    margin-top: 50px;
     padding-bottom: 0px;
     line-height: 50px;
     font-size: 18px;
@@ -37,7 +41,7 @@ body {
   }
   .navbar-nav > li > a {
     line-height: 20px;
-    padding-top: 10px;
+    margin-top: 10px;
     padding-bottom: 10px;
   }
 }
@@ -55,7 +59,7 @@ body {
 }
 
 .navbar-btn {
-  margin-top: 115px;
+  margin-top: 15px;
 } 
 
 .navbar-toggle {
@@ -71,4 +75,8 @@ body {
 .navbar-toggle {
     float: left;
     margin-left: 15px;
+}
+
+.navbar-nav.nav-justified > li{
+    float:none;
 }

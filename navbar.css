@@ -11,32 +11,58 @@ body {
 .navbar-brand {
     position: absolute;
     left: 50%;
-    margin-left: -80px !important;  /* 50% of your logo width */
+    margin-left: -135px !important;  /* 50% of your logo width */
     display: block;
 }
 
+.navbar-brand > img {
+  width: 250px;
+}
+
 .navbar-nav > li > a,button {
-    padding-top: 65px;
+    padding-top: 110px;
     padding-bottom: 0px;
-    line-height: 70px;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 @media (max-width: 767px) {
-    .navbar-nav > li > a {
+  .navbar-brand {
+    margin-left: -80px !important;
+  }
+  .navbar-brand > img {
+    width: 130px;
+  }
+  .navbar-nav > li > a {
     line-height: 20px;
     padding-top: 10px;
-    padding-bottom: 10px;}
+    padding-bottom: 10px;
+  }
+}
+
+.nav > li > a {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+@media (min-width: 1200px) {
+  .nav > li > a {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 }
 
 .navbar-btn {
-  margin-top: 82px;
+  margin-top: 115px;
 } 
 
 .navbar-toggle {
   margin-top: 17px;
 }
 
-@media (min-width: 767px) and (max-width: 1200px) {
+@media (min-width: 767px) and (max-width: 992px) {
     .mobile-nav {
       display:none;
     }

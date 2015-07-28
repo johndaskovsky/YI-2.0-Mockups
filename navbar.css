@@ -4,14 +4,19 @@ body {
 
 .navbar {
   margin-bottom: 20px;
+  min-height: 70px;
+  position: relative;
 }
 
-.navbar {
-    min-height: 70px;
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    margin-left: -80px !important;  /* 50% of your logo width */
+    display: block;
 }
 
 .navbar-nav > li > a,button {
-    padding-top: 0px;
+    padding-top: 65px;
     padding-bottom: 0px;
     line-height: 70px;
 }
@@ -23,12 +28,21 @@ body {
     padding-bottom: 10px;}
 }
 
-.navbar-btn, .navbar-toggle {
-    margin-top: 17px;
+.navbar-btn {
+  margin-top: 82px;
+} 
+
+.navbar-toggle {
+  margin-top: 17px;
 }
 
 @media (min-width: 767px) and (max-width: 1200px) {
     .mobile-nav {
       display:none;
     }
+}
+
+.navbar-toggle {
+    float: left;
+    margin-left: 15px;
 }

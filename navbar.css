@@ -24,7 +24,6 @@ body {
 }
 
 .navbar-nav > li > a,button {
-    margin-top: 50px;
     padding-bottom: 0px;
     line-height: 50px;
     font-size: 18px;
@@ -47,8 +46,7 @@ body {
 }
 
 .nav > li > a {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding:0;
 }
 
 @media (min-width: 1200px) {
@@ -149,4 +147,15 @@ body {
   font-size: 19px;
   margin-top: 0px;
   border-radius: 8px;
+  z-index: 3000;
+}
+
+.nav-seperater-bar {
+  position: relative;
+  margin-top: 115px;
+}
+
+.nav-seperater-bar hr {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }

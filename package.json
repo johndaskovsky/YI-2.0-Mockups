@@ -1,8 +1,22 @@
 {
   "name": "yoga-international",
   "version": "0.0.1",
+  "description": "Connecting practitioners of yoga, meditation, and Ayurveda to a timeless and authentic source of wisdom.",
+  "homepage": "https://yogainternational.com",
+  "author": "Yoga International",
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vector/Yoga-AWS"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-contrib-concat": "^0.5.1"
+    "grunt-autoprefixer": "^3.0.3",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-cssmin": "^0.13.0",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1"
   }
 }

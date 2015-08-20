@@ -11555,6 +11555,14 @@ return jQuery;
 
 }(jQuery);
 
+// Affix nav
+
+$('nav').affix({
+  offset: {
+    top: $('header').height()
+  }
+});
+
 $(function () {
     $('a[href="#search"], button.search').on('click', function(event) {
         event.preventDefault();

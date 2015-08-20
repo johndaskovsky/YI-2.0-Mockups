@@ -1,103 +1,125 @@
+// -----------------------------
 // Icons
 @import "icons.less";
 
-body {
-    padding: 0px;
-    /* font-family: 'Montserrat', sans-serif; */
-    background-color: #f8f8f8;
-}
 
+// -----------------------------
+// Fixed Nav and Header
+
+header {
+    height:30px;
+    background-color: @brand-secondary;
+    p {
+        color: @gray-lighter;
+        font-size: @font-size-small;
+        margin-top: 5px;
+    }
+}
+nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+}
+nav {
+    font-family: @font-family-serif;
+}
 .navbar {
-    margin-bottom: 20px;
-    min-height: 70px;
-    position: relative;
-    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.24);
+    min-height: 85px;
+    box-shadow: 0 5px 6px -6px rgba(0, 0, 0, 0.24);
 }
-
-.navbar-default {
-    background-color: #fff;
-    border-color: #e7e7e7;
-}
-
-.navbar-default .navbar-nav>li>a {
-    color: #555;
-}
-
-.navbar-default .navbar-nav>li>a:hover {
-    color: #222;
-}
-
 .navbar-brand {
-    position: absolute;
-    left: 50%;
-    margin-left: -110px !important;
-    /* 50% of your logo width */
-    display: block;
-    padding: 12px 10px;
-    height: auto;
-    z-index: 100;
-}
-
-.navbar-brand > img {
-    width: 220px;
-}
-
-.navbar-nav > li > a,
-button {
-    padding-bottom: 0px;
-    line-height: 50px;
-    font-size: 18px;
-    font-weight: 300;
-    text-transform: uppercase;
-}
-
-@media (max-width: 767px) {
-    .navbar-brand {
-        margin-left: -80px !important;
+    img {
+        width: 150px;
     }
-    .navbar-brand > img {
-        width: 130px;
-    }
-    .navbar-nav > li > a {
-        line-height: 20px;
-        margin-top: 10px;
-        padding-bottom: 10px;
+}
+@media (min-width: 768px) {
+    .navbar-nav>li>a {
+        padding-top: 29.5px;
+        padding-bottom: 29.5px;
     }
 }
 
-.nav > li > a {
-    padding: 0;
+
+// -----------------------------
+// Color Palette
+.gray-darker {
+    color: @gray-darker;
+}
+.gray-dark {
+    color: @gray-dark;
+}
+.gray {
+    color: @gray;
+}
+.gray-light {
+    color: @gray-light;
+}
+.gray-lighter {
+    color: @gray-lighter;
+}
+.brand-primary {
+    color: @brand-primary;
+}
+.brand-secondary {
+    color: @brand-secondary;
+}
+.brand-white {
+    color: @brand-white;
+}
+.brand-success {
+    color: @brand-success;
+}
+.brand-info {
+    color: @brand-info;
+}
+.brand-warning {
+    color: @brand-warning;
+}
+.brand-danger {
+    color: @brand-danger;
 }
 
-@media (min-width: 1200px) {
-    .nav > li > a {
-        padding-right: 20px;
-        padding-left: 20px;
-    }
+.gray-darker-bg {
+    background-color: @gray-darker;
+}
+.gray-dark-bg {
+    background-color: @gray-dark;
+}
+.gray-bg {
+    background-color: @gray;
+}
+.gray-light-bg {
+    background-color: @gray-light;
+}
+.gray-lighter-bg {
+    background-color: @gray-lighter;
+}
+.brand-primary-bg {
+    background-color: @brand-primary;
+}
+.brand-secondary-bg {
+    background-color: @brand-secondary;
+}
+.brand-white-bg {
+    background-color: @brand-white;
+}
+.brand-success-bg {
+    background-color: @brand-success;
+}
+.brand-info-bg {
+    background-color: @brand-info;
+}
+.brand-warning-bg {
+    background-color: @brand-warning;
+}
+.brand-danger-bg {
+    background-color: @brand-danger;
 }
 
-.navbar-btn {
-    margin-top: 15px;
-}
 
-.navbar-toggle {
-    margin-top: 17px;
-}
-
-@media (min-width: 767px) and (max-width: 992px) {
-    .mobile-nav {
-        display: none;
-    }
-}
-
-.navbar-toggle {
-    float: left;
-    margin-left: 15px;
-}
-
-.navbar-nav.nav-justified > li {
-    float: none;
-}
+// -----------------------------
+// Search box
 
 #search {
     position: fixed;
@@ -155,41 +177,4 @@ button {
     margin-top: 0px;
     border-radius: 8px;
     z-index: 3000;
-}
-
-.nav-seperater-bar {
-    position: relative;
-    margin-top: 115px;
-}
-
-.nav-seperater-bar hr {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border-color: #D0D0D0;
-}
-
-.card-container {
-    background-color: #fff;
-    padding: 20px 0 20px 0;
-    border-top: #444 solid 2px;
-    box-shadow: -1px 0 2px 0 rgba(0, 0, 0, 0.12), 1px 0 2px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
-}
-
-.card-inner {
-    padding: 0 20px 0 20px;
-}
-
-.card-container h6 {
-    margin-top: 0px;
-    margin-bottom: 10px;
-    font-size: 13px;
-    font-weight: bold;
-}
-
-.row [class^=col-] {
-    padding-bottom: 30px;
-}
-
-.glyphicon:hover {
-    color: #f37328;
 }

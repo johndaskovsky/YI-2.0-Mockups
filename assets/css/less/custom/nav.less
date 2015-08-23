@@ -1,0 +1,82 @@
+
+// Fixed Nav and Header
+
+body {
+    min-height: 1000px;
+}
+
+header {
+    height:30px;
+    background-color: @brand-secondary;
+    p {
+        color: @gray-lighter;
+        font-size: @font-size-small;
+        margin-top: 5px;
+    }
+}
+nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+}
+.navbar {
+    font-family: @font-family-serif;
+    min-height: 75px;
+    text-transform: uppercase;
+    box-shadow: 0 5px 6px -6px rgba(0, 0, 0, 0.24);
+}
+.navbar-toggle {
+    float:left;
+    line-height: 10px;
+    margin-top: 19px;
+    margin-bottom: 17px;
+    margin-left: 15px;
+}
+.dropdown-menu {
+    font-family: @font-family-sans-serif;
+    text-transform: none;
+}
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    margin-left: -75px !important;  /* 50% of your logo width */
+    padding: 12.5px 0 12.5px 0;
+    display:block;
+    height: 75px;
+    img {
+        width: 130px;
+    }
+    z-index:100;
+}
+
+@media (min-width: @screen-md-min) {
+    .navbar {
+        min-height: 75px;
+    }
+    .navbar-nav>li>a {
+        padding-top: 29.5px;
+        padding-bottom: 30px;
+    }
+    .navbar-nav {
+        float: right;
+    }
+    .navbar-brand {
+        position: static;
+        margin-left: 0px !important;
+        height: 85px;
+        padding: 12.5px 0 12.5px 0;
+        img {
+            width: 150px;
+        }
+    }
+    .menu-search {
+        margin-left: 113px;
+    }
+}
+
+@media (min-width: @screen-lg-min) {
+    .menu-search {
+        margin-left: 195px;
+    }
+}

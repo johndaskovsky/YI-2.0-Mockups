@@ -7,79 +7,120 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="../../favicon.ico">
 
-    <title>YI 2.0 Mockup</title>
+    <title>YI Mockup</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Cloud.typography fonts -->
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7250374/634248/css/fonts.css" />
 
-    <!-- Custom styles for this template -->
-    <link href="navbar.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Core CSS -->
+    <link href="assets/css/build/production.min.css" rel="stylesheet">
   </head>
-
   <body>
-
-    <div class="container">
-
-      <!-- Logo -->
-      <div class="row text-left" style="margin-bottom:15px;">
-        <a href="#" style="margin-left:20px;"><img src="images/yi-logo.png" width="150"></a>
+    <header class="hidden-xs hidden-sm">
+      <div class="container">
+      <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+          <p class="text-center">
+            About&nbsp;&nbsp;
+            Challenges&nbsp;&nbsp;
+            Courses&nbsp;&nbsp;
+            Membership&nbsp;&nbsp;
+            Shop&nbsp;&nbsp;
+            <i class="icon-heart-o"></i>
+          </p>
+        </div>
+        <div class="col-sm-2">
+          <div class="pull-right hidden-sm">    
+            <p>
+              Join | Log In
+            </p>
+          </div>
+        </div>
       </div>
-
-      <!-- Static navbar -->
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
+      </div>
+    </header>         
+        
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#" style="padding:10px 10px;">
-              <img alt="Brand" src="images/yoga-square.png" width="30">
-            </a>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
               <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+              <i class="icon-icons2"></i>
+            </button>
+            <a class="navbar-brand" href="#">
+              <img src="images/logo-orange.png" alt="Yoga International" />
+            </a>
+            <button type="button" class="search navbar-toggle collapsed" style="float:right;line-height:10px;">
+              <i class="icon-search"></i>
             </button>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li><a style="color:#785aa1;" href="#">Yoga</a></li>
-              <li><a style="color:#0091b2;" href="#">Health</a></li>
-              <li><a style="color:#73a036;" href="#">Wisdom</a></li>
-              <li><a style="color:#ee2c3b;" href="#">Classes</a></li>
-              <li><a href="#"><span class="glyphicon glyphicon-education" aria-hidden="true"></span> Courses</a></li>
-              <li><a href="#"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Shop</a></li>
-              <li><a href="#"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li role="separator" class="divider"></li>
-              <li>
-                <button type="button" class="btn btn-success navbar-btn" style="margin-left:15px">
-                  <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Sign Up
-                </button>
+              <li class="hidden-lg"><a href="#">Yoga</i></a></li>
+              <li class="hidden-lg"><a href="#">Classes</i></a></li>
+              <li class="hidden-lg"><a href="#">Meditation</i></a></li>
+              <li class="hidden-lg"><a href="#">Health</i></a></li>
+              <li class="hidden-lg"><a href="#">Wisdom</i></a></li>
+              <li class="dropdown hidden-xs hidden-sm hidden-md">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Yoga <i class="icon-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Classes</a></li>
+                  <li><a href="#">Practice</a></li>
+                  <li><a href="#">Yoga Therapy</a></li>
+                  <li><a href="#">Pranayama</a></li>
+                  <li><a href="#">Lifestyle</a></li>
+                  <li><a href="#">For Teachers</a></li>
+                  <li><a href="#">Español</a></li>
+                </ul>
               </li>
-              <li>
-                  <button type="button" class="btn btn-primary navbar-btn" style="margin-left:15px">
-                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span> Login
-                  </button>
+              <li class="dropdown hidden-xs hidden-sm hidden-md">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Classes <i class="icon-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Subtopic 1</a></li>
+                  <li><a href="#">Subtopic 2</a></li>
+                  <li><a href="#">Subtopic 3</a></li>
+                </ul>
               </li>
+              <li class="dropdown hidden-xs hidden-sm hidden-md">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Meditation <i class="icon-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Subtopic 1</a></li>
+                  <li><a href="#">Subtopic 2</a></li>
+                  <li><a href="#">Subtopic 3</a></li>
+                </ul>
+              </li>
+              <li class="dropdown hidden-xs hidden-sm hidden-md">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Health <i class="icon-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Subtopic 1</a></li>
+                  <li><a href="#">Subtopic 2</a></li>
+                  <li><a href="#">Subtopic 3</a></li>
+                </ul>
+              </li>
+              <li class="dropdown hidden-xs hidden-sm hidden-md">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Wisdom <i class="icon-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Subtopic 1</a></li>
+                  <li><a href="#">Subtopic 2</a></li>
+                  <li><a href="#">Subtopic 3</a></li>
+                </ul>
+              </li>
+              <li class="menu-search hidden-xs hidden-sm"><a href="#search"><i class="icon-search"></i></a></li>
             </ul>
           </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
-      </nav>
+      </div>
+    </nav>
 
-      
+    <div class="container">
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
         <h1>Navbar example</h1>
-        <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+        <p>To see the difference between static and fixed top navbars, just scroll.</p>
         <p>
           <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
         </p>
@@ -87,11 +128,14 @@
 
     </div> <!-- /container -->
 
+    <!-- Search modal -->
+    <div id="search">
+      <button type="button" class="close"><i id="search-close-icon" class="icon-cross-large"></i></button>
+      <form>
+          <input type="search" value="" placeholder="search" />
+      </form>
+    </div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="assets/scripts/build/production.min.js"></script>
   </body>
 </html>

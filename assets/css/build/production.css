@@ -6356,4 +6356,13 @@ nav.affix {
   border-radius: 8px;
   z-index: 3000;
 }
+footer {
+  padding: 40px 0 40px 0;
+  background-color: #3b3b3d;
+  color: #fdfbfb;
+}
+footer ul {
+  padding: 0;
+  list-style: none;
+}
 /*# sourceMappingURL=production.css.map */

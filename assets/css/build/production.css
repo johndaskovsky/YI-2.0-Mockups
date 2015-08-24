@@ -275,7 +275,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+  font-family: "Gotham A", "Gotham B", Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 1.42857143;
   color: #4b4c4e;
@@ -5230,7 +5230,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+  font-family: "Gotham A", "Gotham B", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5348,7 +5348,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+  font-family: "Gotham A", "Gotham B", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6250,7 +6250,7 @@ nav.affix {
   margin-left: 15px;
 }
 .dropdown-menu {
-  font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, Arial, sans-serif;
+  font-family: "Gotham A", "Gotham B", Helvetica, Arial, sans-serif;
   text-transform: none;
 }
 .navbar-brand {
@@ -6360,9 +6360,13 @@ footer {
   padding: 40px 0 40px 0;
   background-color: #3b3b3d;
   color: #fdfbfb;
+  font-weight: 300;
 }
 footer ul {
   padding: 0;
   list-style: none;
+}
+footer .footer-title {
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=production.css.map */

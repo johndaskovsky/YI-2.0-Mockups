@@ -14,6 +14,10 @@
     <!-- Cloud.typography fonts -->
     <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7250374/634248/css/fonts.css" />
 
+    <!-- Slider CSS -->
+    <link href="assets/css/masterslider/style/masterslider.css" rel="stylesheet">
+    <link href="assets/css/masterslider/skins/default/style.css" rel="stylesheet">
+
     <!-- Core CSS -->
     <link href="assets/css/build/production.min.css" rel="stylesheet">
   </head>
@@ -114,10 +118,64 @@
       </div>
     </nav>
 
+    <div class="slider">
+      <div class="master-slider ms-skin-default" id="masterslider">
+          <!-- new slide -->
+          <div class="ms-slide" data-fill-mode="fit" data-delay="5">
+               
+              <!-- slide background -->
+              <img src="assets/css/masterslider/style/blank.gif" data-src="images/full-width.jpg" alt="lorem ipsum dolor sit"/>     
+               
+              <!-- slide text layer -->
+              <div class="ms-layer ms-caption" style="top:10px; left:30px;">
+                  Lorem ipsum dolor sit amet
+              </div>
+               
+          </div>
+          <!-- end of slide -->
+           
+          <!-- new slide -->
+          <div class="ms-slide">
+               
+              <!-- slide background -->
+              <img src="assets/css/masterslider/style/blank.gif" data-src="images/full-width2.jpg" alt="lorem ipsum dolor sit"/>     
+               
+              <!-- slide text layer -->
+              <div class="ms-layer ms-caption" style="top:10px; left:30px;">
+                  Lorem ipsum dolor sit amet
+              </div>
+               
+              <!-- linked slide -->
+              <a href="http://codecanyon.net/user/averta">Averta</a>
+               
+          </div>
+          <!-- end of slide -->
+           
+          <!-- new slide -->
+          <div class="ms-slide">
+               
+              <!-- slide background -->
+              <img src="assets/css/masterslider/style/blank.gif" data-src="images/full-width2.jpg" alt="lorem ipsum dolor sit"/>     
+               
+              <!-- slide text layer -->
+              <div class="ms-layer ms-caption" style="top:10px; left:30px;">
+                  Lorem ipsum dolor sit amet
+              </div>
+               
+              <!-- youtube video -->
+              <a href="http://www.youtube.com/embed/YHWkro9-e9Q?hd=1&wmode=opaque&controls=1&showinfo=0" data-type="video">Youtube video</a>
+               
+          </div>
+          <!-- end of slide -->
+       
+      </div>
+      <!-- end of masterslider -->
+    </div>
+
     <div class="container">
 
       <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
+      <div class="jumbotron" style="margin-top:30px;">
         <h1>Navbar example</h1>
         <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
         <p>To see the difference between static and fixed top navbars, just scroll.</p>

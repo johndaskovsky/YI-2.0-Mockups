@@ -6323,6 +6323,7 @@ nav.affix {
 .navbar {
   font-family: "Requiem Display A", "Requiem Display B", Georgia, "Times New Roman", Times, serif;
   min-height: 75px;
+  margin-bottom: 0px;
   text-transform: uppercase;
   -webkit-box-shadow: 0 5px 6px -6px rgba(0, 0, 0, 0.24);
           box-shadow: 0 5px 6px -6px rgba(0, 0, 0, 0.24);
@@ -6459,7 +6460,7 @@ nav.affix {
   padding: 0 20px 0 20px;
 }
 .title-bar-h1 {
-  margin: 32px 0 48px 0;
+  margin: 48px 0 48px 0;
 }
 .title-bar-h1 span {
   top: -25px;

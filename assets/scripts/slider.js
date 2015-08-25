@@ -11,3 +11,21 @@ slider.setup('masterslider' , {
     });
 // adds Arrows navigation control to the slider.
 slider.control('arrows');
+
+
+
+var slider2 = new MasterSlider();
+slider2.control('arrows'); 
+slider2.control('slideinfo',{insertTo:"#partial-view-1" , autohide:false, align:'bottom', size:60});
+slider2.control('circletimer' , {color:"#FFFFFF" , stroke:9});
+
+slider2.setup('masterslider2' , {
+  width:380,
+  height:210,
+  space:10,
+  loop:true,
+  view:'fadeWave',
+  layout:'partialview'
+});
+
+$(".ms-inner-controls-cont").css("max-width", "1200px");

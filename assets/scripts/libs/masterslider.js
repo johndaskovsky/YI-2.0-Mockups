@@ -5165,7 +5165,7 @@ MSSliderEvent.DESTROY				= 'ms_destroy';
 				
 		this.$controlsCont = $('<div></div>').addClass('ms-inner-controls-cont');//.appendTo(this.$element);
 		if(this.options.centerControls){
-			this.$controlsCont.css('max-width' , this.options.width + 'px');
+			this.$controlsCont.css('max-width' , '1400px');
 		}
 
 		this.$controlsCont.prepend(this.view.$element);

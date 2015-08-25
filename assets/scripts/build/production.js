@@ -20792,12 +20792,12 @@ slider.control('arrows');
 
 
 
-var slider2 = new MasterSlider();
-slider2.control('arrows'); 
-slider2.control('slideinfo',{insertTo:"#partial-view-1" , autohide:false, align:'bottom', size:60});
-slider2.control('circletimer' , {color:"#FFFFFF" , stroke:9});
+var slider1 = new MasterSlider();
+slider1.control('arrows'); 
+slider1.control('slideinfo',{insertTo:"#partial-view-1" , autohide:false, align:'bottom', size:60});
+slider1.control('circletimer' , {color:"#FFFFFF" , stroke:9});
 
-slider2.setup('masterslider2' , {
+slider1.setup('multi-slide-1' , {
   width:380,
   height:210,
   space:10,
@@ -20806,4 +20806,16 @@ slider2.setup('masterslider2' , {
   layout:'partialview'
 });
 
-$(".ms-inner-controls-cont").css("max-width", "1200px");
+var slider2 = new MasterSlider();
+slider2.control('arrows'); 
+slider2.control('slideinfo',{insertTo:"#partial-view-2" , autohide:false, align:'bottom', size:60});
+slider2.control('circletimer' , {color:"#FFFFFF" , stroke:9});
+
+slider2.setup('multi-slide-2' , {
+  width:278,
+  height:154,
+  space:10,
+  loop:true,
+  view:'fadeWave',
+  layout:'partialview'
+});

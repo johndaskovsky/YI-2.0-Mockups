@@ -10,3 +10,45 @@
     background-color: @brand-secondary;
     padding: 40px 0 40px 0;
 }
+
+.slider-caption {
+    width:350px;
+    padding:20px;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: @brand-white;
+    h2 {
+        color: @brand-white;
+        font-size: @font-size-h4;
+        font-family: @font-family-serif-fine;
+    }
+    p {
+        font-size: 18px !important;
+        line-height: @line-height-computed !important;
+    }
+    .btn {
+        color: @brand-white;
+        background-color: transparent;
+        border-color: @brand-white;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: @screen-sm-min) {
+    .slider-caption {
+        h2 {
+            font-size: @font-size-h3;
+        }
+    }
+}
+
+@media (min-width: @screen-md-min) {
+    .slider-caption {
+        width:500px;
+        h2 {
+            font-size: @font-size-h2;
+        }
+        .btn {
+            font-size: 18px;
+        }
+    }
+}

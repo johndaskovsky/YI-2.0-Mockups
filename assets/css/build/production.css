@@ -378,7 +378,7 @@ h6,
 .h5,
 .h6 {
   font-family: "Requiem Display A", "Requiem Display B", Georgia, "Times New Roman", Times, serif;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.1;
   color: #6d6e71;
 }
@@ -6486,5 +6486,42 @@ nav.affix {
 .banner {
   background-color: #f8efe8;
   padding: 40px 0 40px 0;
+}
+.slider-caption {
+  width: 350px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.25);
+  color: #fdfbfb;
+}
+.slider-caption h2 {
+  color: #fdfbfb;
+  font-size: 23px;
+  font-family: "Requiem Fine A", "Requiem Fine B", Georgia, "Times New Roman", Times, serif;
+}
+.slider-caption p {
+  font-size: 18px !important;
+  line-height: 25px !important;
+}
+.slider-caption .btn {
+  color: #fdfbfb;
+  background-color: transparent;
+  border-color: #fdfbfb;
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .slider-caption h2 {
+    font-size: 31px;
+  }
+}
+@media (min-width: 992px) {
+  .slider-caption {
+    width: 500px;
+  }
+  .slider-caption h2 {
+    font-size: 38px;
+  }
+  .slider-caption .btn {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=production.css.map */

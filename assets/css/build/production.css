@@ -6487,57 +6487,66 @@ nav.affix {
   background-color: #f8efe8;
   padding: 40px 0 40px 0;
 }
+/*
 .slider-caption {
-  width: 350px;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.25);
-  color: #fdfbfb;
+    width:350px;
+    padding:20px;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: @brand-white;
+    h2 {
+        color: @brand-white;
+        font-size: @font-size-h4;
+        font-family: @font-family-serif-fine;
+    }
+    p {
+        font-size: 18px !important;
+        line-height: @line-height-computed !important;
+    }
+    .btn {
+        color: @brand-white;
+        background-color: transparent;
+        border-color: @brand-white;
+        font-size: 16px;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.25);
+        }
+    }
 }
-.slider-caption h2 {
-  color: #fdfbfb;
-  font-size: 23px;
-  font-family: "Requiem Fine A", "Requiem Fine B", Georgia, "Times New Roman", Times, serif;
+
+@media (min-width: @screen-sm-min) {
+    .slider-caption {
+        h2 {
+            font-size: @font-size-h3;
+        }
+    }
 }
-.slider-caption p {
-  font-size: 18px !important;
-  line-height: 25px !important;
+
+@media (min-width: @screen-md-min) {
+    .slider-caption {
+        width:500px;
+        h2 {
+            font-size: @font-size-h2;
+        }
+        .btn {
+            font-size: 18px;
+        }
+    }
 }
-.slider-caption .btn {
-  color: #fdfbfb;
-  background-color: transparent;
-  border-color: #fdfbfb;
-  font-size: 16px;
+
+.multi-slide-text {
+    .multi-slide-title {
+        font-family: @font-family-sans-serif;
+        text-transform: uppercase;
+        color: @gray-light !important;
+        font-size:20px !important;
+    }
+    p {
+        font-family: @font-family-sans-serif;
+        font-size:16px !important;
+    }
+    .h5 {
+        color: @gray-light !important;
+    }
 }
-.slider-caption .btn:hover {
-  background-color: rgba(255, 255, 255, 0.25);
-}
-@media (min-width: 768px) {
-  .slider-caption h2 {
-    font-size: 31px;
-  }
-}
-@media (min-width: 992px) {
-  .slider-caption {
-    width: 500px;
-  }
-  .slider-caption h2 {
-    font-size: 38px;
-  }
-  .slider-caption .btn {
-    font-size: 18px;
-  }
-}
-.multi-slide-text .multi-slide-title {
-  font-family: "Gotham A", "Gotham B", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  color: #a8a9ab !important;
-  font-size: 20px !important;
-}
-.multi-slide-text p {
-  font-family: "Gotham A", "Gotham B", Helvetica, Arial, sans-serif;
-  font-size: 16px !important;
-}
-.multi-slide-text .h5 {
-  color: #a8a9ab !important;
-}
+*/
 /*# sourceMappingURL=production.css.map */

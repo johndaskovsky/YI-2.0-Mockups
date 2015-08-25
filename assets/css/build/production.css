@@ -6508,6 +6508,9 @@ nav.affix {
   border-color: #fdfbfb;
   font-size: 16px;
 }
+.slider-caption .btn:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
 @media (min-width: 768px) {
   .slider-caption h2 {
     font-size: 31px;

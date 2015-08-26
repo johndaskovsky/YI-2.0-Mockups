@@ -136,8 +136,8 @@
 
     display: block;
 
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
     margin-top: -10px;
     padding: 0;
 
@@ -187,11 +187,17 @@
 .slick-prev
 {
     z-index: 1;
-    left: -25px;
+    left: -10px;
+    @media (min-width: @screen-sm-min) {
+        left: -25px;
+    }
 }
 [dir='rtl'] .slick-prev
 {
-    right: -25px;
+    right: -10px;
+    @media (min-width: @screen-sm-min) {
+        right: -25px;
+    }
     left: auto;
 }
 .slick-prev:before
@@ -205,12 +211,18 @@
 
 .slick-next
 {
-    right: -25px;
+    right: -10px;
+    @media (min-width: @screen-sm-min) {
+        right: -25px;
+    }
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
+    left: -10px;
+    @media (min-width: @screen-sm-min) {
+        left: -25px;
+    }
 }
 .slick-next:before
 {

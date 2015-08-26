@@ -38,7 +38,7 @@
         </div>
     </header>
     <nav class="navbar navbar-default navbar-static-top">
-        <div class="container">
+        <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
@@ -52,13 +52,23 @@
                 </button>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
+                <table id="nav-table" class="nav navbar-nav hidden-md hidden-lg table table-bordered text-center">
+                    <tr>
+                      <td>Yoga</td>
+                      <td>Classes</td>
+                    </tr>
+                    <tr>
+                      <td>Meditation</td>
+                      <td>Health</td>
+                    </tr>
+                </table>
+                <ul class="nav navbar-nav hidden-xs hidden-sm">
                     <li class="hidden-lg"><a href="#">Yoga</i></a></li>
                     <li class="hidden-lg"><a href="#">Classes</i></a></li>
                     <li class="hidden-lg"><a href="#">Meditation</i></a></li>
                     <li class="hidden-lg"><a href="#">Health</i></a></li>
                     <li class="hidden-lg"><a href="#">Wisdom</i></a></li>
-                    <li class="dropdown hidden-xs hidden-sm hidden-md">
+                    <li class="dropdown hidden-md">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Yoga <i class="icon-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Classes</a></li>
@@ -70,7 +80,7 @@
                             <li><a href="#">Español</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown hidden-xs hidden-sm hidden-md">
+                    <li class="dropdown hidden-md">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Classes <i class="icon-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Subtopic 1</a></li>
@@ -78,7 +88,7 @@
                             <li><a href="#">Subtopic 3</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown hidden-xs hidden-sm hidden-md">
+                    <li class="dropdown hidden-md">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Meditation <i class="icon-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Subtopic 1</a></li>
@@ -86,7 +96,7 @@
                             <li><a href="#">Subtopic 3</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown hidden-xs hidden-sm hidden-md">
+                    <li class="dropdown hidden-md">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Health <i class="icon-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Subtopic 1</a></li>
@@ -94,7 +104,7 @@
                             <li><a href="#">Subtopic 3</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown hidden-xs hidden-sm hidden-md">
+                    <li class="dropdown hidden-md">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Wisdom <i class="icon-chevron-down"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Subtopic 1</a></li>
@@ -102,7 +112,7 @@
                             <li><a href="#">Subtopic 3</a></li>
                         </ul>
                     </li>
-                    <li class="menu-search hidden-xs hidden-sm"><a href="#search"><i class="icon-search"></i></a></li>
+                    <li class="menu-search"><a href="#search"><i class="icon-search"></i></a></li>
                 </ul>
             </div>
             <!--/.nav-collapse -->
@@ -110,34 +120,108 @@
     </nav>
     
     <!--Full Width Slider -->
-    <div class="full-width-slider">
-      <div class="slide-container">
-        <img class="img-responsive" data-lazy="images/full-width.jpg"/>
-        <div class="slide-caption text-center">
-          <h2>Not Every Yoga Class Is For Every Body</h2>
-          <p class="hidden-xs hidden-sm">After teaching yoga for over 15 years (and practicing yoga for as long as I can remember), the most important lesson I’ve learned is that not all yoga classes are appropriate for every body, all the time.</p>
-          <a href="#slidelink" type="button" class="btn btn-default">READ MORE</a>
-        </div>
-      </div>
-      <div class="slide-container">
-        <img class="img-responsive" data-lazy="images/full-width2.jpg"/>
-        <div class="slide-caption text-center">
-          <h2>This is another really long title that probably should be shorter</h2>
-          <p class="hidden-xs hidden-sm">After teaching yoga for over 15 years (and practicing yoga for as long as I can remember), the most important lesson I’ve learned is that not all yoga classes are appropriate for every body, all the time.</p>
-          <a href="#slidelink" type="button" class="btn btn-default">READ MORE</a>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12" style="padding:0;">
+          <div class="full-width-slider">
+            <div class="slide-container">
+              <img class="img-responsive" data-lazy="images/full-width.jpg"/>
+              <div class="slide-caption text-center">
+                <h2>Not Every Yoga Class Is For Every Body</h2>
+                <p class="hidden-xs hidden-sm">After teaching yoga for over 15 years (and practicing yoga for as long as I can remember), the most important lesson I’ve learned is that not all yoga classes are appropriate for every body, all the time.</p>
+                <a href="#slidelink" type="button" class="btn btn-default">READ MORE</a>
+              </div>
+            </div>
+            <div class="slide-container">
+              <img class="img-responsive" data-lazy="images/full-width2.jpg"/>
+              <div class="slide-caption text-center">
+                <h2>This is another really long title that probably should be shorter</h2>
+                <p class="hidden-xs hidden-sm">After teaching yoga for over 15 years (and practicing yoga for as long as I can remember), the most important lesson I’ve learned is that not all yoga classes are appropriate for every body, all the time.</p>
+                <a href="#slidelink" type="button" class="btn btn-default">READ MORE</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
+      
     <div class="container">
-        <div class="row" style="margin-top:30px;">
+        <div class="row t30">
             <div class="col-xs-12">
                 <div class="title-bar-h2">
                     <span class="h2">The Latest</span>
                 </div>
             </div>
         </div>
-        
+    </div>
+
+    <div class="container">
+        <!--Multi Slider Small -->
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="multi-slide-sm">
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead1.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead2.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead3.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead4.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead5.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead6.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead7.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead8.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container">
         <div class="row">
             <div class="col-xs-12">
                 <div class="title-bar-h2">
@@ -145,7 +229,75 @@
                 </div>
             </div>
         </div>
-        
+    </div>
+
+    <div class="container">
+        <!--Multi Slider Medium -->
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="multi-slide-md">
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead1.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead2.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead3.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead4.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead5.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead6.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead7.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead8.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <div class="container">
         <div class="row">
             <div class="col-xs-12">
                 <div class="title-bar-h2">
@@ -154,7 +306,337 @@
             </div>
         </div>
     </div>
-    <!-- /container -->
+
+    <div class="container">
+        <div class="row" style="margin: 5px 0 30px 0;">
+            <div class="col-xs-12 col-sm-6">
+                <img class="img-responsive" style="margin: 0 0 20px 0;" src="images/lead7.jpg"/>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <img class="img-responsive" style="margin: 0 0 20px 0;" src="images/lead8.jpg"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner b30">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <h1>
+                    In our uniquely human capacity to connect movement with breath and spiritual meaning, yoga is born.
+                    </h1>
+                    <h1>
+                      <em>&mdash; Gurmukh Kaur Khalsa</em>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="title-bar-h2">
+                    <span class="h2">Yoga Classes</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!--Multi Slider Small -->
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="multi-slide-sm">
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead1.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead2.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead3.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead4.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead5.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead6.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead7.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead8.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="title-bar-h2">
+                    <span class="h2">Courses</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!--Multi Slider Medium -->
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="multi-slide-md">
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead1.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead2.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead3.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead4.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead5.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead6.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead7.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead8.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="title-bar-h2">
+                    <span class="h2">Challenges</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!--Multi Slider Large -->
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="multi-slide-lg">
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead1.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead2.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead3.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead4.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead5.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead6.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead7.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead8.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="title-bar-h2">
+                    <span class="h2">Guides</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!--Multi Slider Medium -->
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="multi-slide-md">
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead1.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead2.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead3.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead4.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead5.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead6.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead7.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+              <div class="slide-container">
+                <img class="img-responsive" data-lazy="images/lead8.jpg"/>
+                <div class="slide-caption text-center">
+                  <p>Another Great Title About Yoga Stuff</p>
+                  <h5>By James Smith</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
     <div class="banner">
         <div class="container">
             <div class="row">
@@ -165,6 +647,7 @@
             </div>
         </div>
     </div>
+
     <footer>
         <div class="container">
             <div class="row">

@@ -15,6 +15,17 @@ nav.affix {
     width: 100%;
     z-index:10;
 }
+
+#nav-table {
+    width:99.9%;
+    margin:0;
+    border: none;
+}
+
+.navbar-collapse {
+    padding:0;
+}
+
 .navbar {
     font-family: @font-family-serif;
     min-height: 75px;
@@ -32,6 +43,13 @@ nav.affix {
 .dropdown-menu {
     font-family: @font-family-sans-serif;
     text-transform: none;
+    background-color: @brand-white;
+    box-shadow: 0 6px 7px rgba(0,0,0,.175);
+    border: none;
+}
+.dropdown-menu>li>a {
+    color: @gray;
+    font-weight: 300;
 }
 .navbar-brand {
     position: absolute;

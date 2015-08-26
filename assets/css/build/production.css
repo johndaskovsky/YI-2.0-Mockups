@@ -6531,7 +6531,7 @@ nav.affix {
 }
 /* Slider theme */
 .slick-loading .slick-list {
-  background: #ffffff url('ajax-loader.gif') center center no-repeat;
+  background: #ffffff url('/images/ajax-loader.gif') center center no-repeat;
 }
 /* Arrows */
 .slick-prev,

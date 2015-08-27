@@ -6320,13 +6320,50 @@ nav.affix {
   width: 100%;
   z-index: 10;
 }
-#nav-table {
+#nav-table-1,
+#nav-table-2,
+#nav-table-3 {
   width: 99.9%;
   margin: 0;
   border: none;
+  font-size: 15px;
 }
-#nav-table td {
-  width: 33%;
+#nav-table-1 td:hover,
+#nav-table-2 td:hover,
+#nav-table-3 td:hover {
+  background-color: #e1e1e2;
+}
+#nav-table-1 a,
+#nav-table-2 a,
+#nav-table-3 a,
+#nav-table-1 button,
+#nav-table-2 button,
+#nav-table-3 button {
+  color: #6d6e71;
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+  font-family: "Requiem Display A", "Requiem Display B", Georgia, "Times New Roman", Times, serif;
+  text-transform: uppercase;
+  outline: none;
+}
+#nav-table-1 a:hover,
+#nav-table-2 a:hover,
+#nav-table-3 a:hover,
+#nav-table-1 button:hover,
+#nav-table-2 button:hover,
+#nav-table-3 button:hover {
+  color: #4b4c4e;
+}
+#nav-table-1 td {
+  width: 100%;
+}
+#nav-table-2 td {
+  width: 50%;
+}
+#nav-table-3 td {
+  width: 33.33%;
 }
 .navbar-collapse {
   padding: 0;

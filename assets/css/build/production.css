@@ -6492,13 +6492,13 @@ nav.affix {
   top: 15px;
   right: 15px;
   color: #fdfbfb;
-  background-color: #f3732a;
-  border-color: #f3732a;
+  background-color: transparent;
+  border: 1px solid #fdfbfb;
   opacity: 1;
   padding: 14px 17px;
   font-size: 19px;
   margin-top: 0px;
-  border-radius: 8px;
+  border-radius: 0px;
   z-index: 3000;
 }
 /* Slider */

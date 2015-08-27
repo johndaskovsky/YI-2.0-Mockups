@@ -14199,24 +14199,54 @@ return jQuery;
 
 }));
 
+//Focus on first field of modal
+$(function() {
+  $('#modal-sign-in').on('shown.bs.modal', function () {
+    $('#modalInputEmail').focus();
+  });
+
+  $('#modal-sign-in').on('hidden.bs.modal', function () {
+    $(".modal-sign-in-form").show();
+    $(".modal-join-form").hide();
+  });
+
+  $('#modal-join').on('shown.bs.modal', function () {
+    $('#modalJoinInputName').focus();
+  });
+
+  $('#modal-create-an-account-toggle').on('click', function () {
+    $(".modal-sign-in-form").hide(400);
+    $(".modal-join-form").show(400);
+    setTimeout( function() {
+      $('#modalJoinInputName').focus();
+    }, 450);
+  });
+  
+});
+
 // Affix nav
-$('nav').affix({
-  offset: {
-    top: $('header').height()
-  }
-});
-
-//Slide down dropdowns
-$(document).ready(function(){
-  $('.dropdown').on('show.bs.dropdown', function(e){
-    $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
-  });
-  $('.dropdown').on('hide.bs.dropdown', function(e){
-    $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+$(function() {
+  $('nav').affix({
+    offset: {
+      top: $('header').height()
+    }
   });
 });
 
-//Toggle mobile toggle menu icon with cross
+//Slide down dropdowns on hover and click
+$(function($) {
+  $('.navbar .dropdown').hover(function() {
+      $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+  }, function() {
+      $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
+  });
+
+  $('.navbar .dropdown > a').click(function(){
+      location.href = this.href;
+  });
+});
+
+//Toggle mobile menu icon to x on click
 $(function() {
   $('#navbar')
     .on('shown.bs.collapse', function() {

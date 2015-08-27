@@ -7,6 +7,45 @@
 @import "slick.less";
 @import "title-bars.less";
 
+#site-notification {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index:10;
+    min-height:30px;
+    background-color: @brand-primary;
+    color: @brand-white;
+    .text-center {
+        padding:5px;
+    }
+}
+
+#modal-sign-in, #modal-join {
+    .btn {
+        width:100%;
+    }
+}
+
+.btn-default {
+    &:hover {
+        background-color: @gray-lighter;
+    }
+}
+
+@media (min-width: @screen-xs-min) {
+  // Automatically set modal's width for larger viewports
+  .modal-dialog {
+    width: @modal-md;
+    margin: 30px auto;
+  }
+  .modal-content {
+    .box-shadow(0 5px 15px rgba(0,0,0,.5));
+  }
+
+  // Modal sizes
+  .modal-sm { width: @modal-sm; }
+}
+
 .b10 {
     margin-bottom: 10px;
 }

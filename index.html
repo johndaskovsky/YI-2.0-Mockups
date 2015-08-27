@@ -30,7 +30,13 @@
                 <div class="col-sm-2">
                     <div class="pull-right hidden-sm">
                         <p>
-                            <i class="icon-user"></i> Sign In &nbsp;|&nbsp; Join
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#modal-sign-in">
+                              <i class="icon-user"></i> Sign In
+                            </button>
+                            &nbsp;|&nbsp;
+                            <button type="button" class="btn btn-link" data-toggle="modal" data-target="#modal-join">
+                              Join
+                            </button>
                         </p>
                     </div>
                 </div>
@@ -116,7 +122,7 @@
                 <a class="navbar-brand" href="#">
                     <img src="images/logo-orange.png" alt="Yoga International" />
                 </a>
-                <button type="button" class="search navbar-toggle collapsed" style="float:right;line-height:10px;">
+                <button id="nav-mobile-user-icon" type="button" class="navbar-toggle collapsed" data-toggle="modal" data-target="#modal-sign-in">
                     <i class="icon-user"></i>
                 </button>
             </div>
@@ -149,8 +155,16 @@
                 </table>
                 <table id="nav-table-2" class="nav navbar-nav table table-bordered text-center">
                     <tr>
-                      <td><i class="icon-user"></i> Sign In</td>
-                      <td>Join</td>
+                      <td>
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#modal-sign-in">
+                            <i class="icon-user"></i> Sign In
+                        </button>
+                      </td>
+                      <td>
+                        <button type="button" class="btn btn-link" data-toggle="modal" data-target="#modal-join">
+                            Join
+                        </button>
+                      </td>
                     </tr>
                 </table>
             </div>
@@ -762,13 +776,95 @@
             </div>
         </div>
     </div>
-    <!-- Search modal -->
+    <div id="site-notification">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    Awesome site notification!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Search -->
     <div id="search">
         <button type="button" class="close"><i id="search-close-icon" class="icon-cross-large"></i></button>
         <form>
             <input type="search" value="" placeholder="search" />
         </form>
     </div>
+
+    <!-- Modal Sign In  -->
+    <div class="modal fade" id="modal-sign-in" tabindex="-1" role="dialog" aria-labelledby="modal-sign-in-label">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="icon-cross"></i></span></button>
+            <p class="modal-title modal-sign-in-form" id="modal-sign-in-label"><i class="icon-user"></i> Sign In</p>
+            <p class="modal-title modal-join-form" style="display:none;">Create an Account</p>
+          </div>
+          <div class="modal-body">
+            <!-- Modal Sign In Form  -->
+            <form class="modal-sign-in-form">
+              <div class="form-group">
+                <input type="email" class="form-control" id="modalInputEmail" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="modalInputPassword" placeholder="Password">
+              </div>
+              <button type="submit" class="btn btn-primary">Sign In</button>
+            </form>
+            <!-- Modal Join Form  -->
+            <form class="modal-join-form" style="display:none;">
+              <div class="form-group">
+                <input type="text" class="form-control" id="modalJoinInputName" placeholder="First Name">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="modalJoinInputEmail" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="modalJoinInputPassword" placeholder="Password">
+              </div>
+              <button type="submit" class="btn btn-primary">Create an Account</button>
+            </form>
+            <div class="title-bar-h4 modal-sign-in-form">
+              <span class="h4">
+                or
+              </span>
+            </div>
+            <button id="modal-create-an-account-toggle" type="submit" class="btn btn-default modal-sign-in-form">Create an Account</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Join  -->
+    <div class="modal fade" id="modal-join" tabindex="-1" role="dialog" aria-labelledby="modal-join-label">
+      <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="icon-cross"></i></span></button>
+            <p class="modal-title" id="modal-join-label">Create an Account</p>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" id="modalJoinInputName" placeholder="First Name">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" id="modalJoinInputEmail" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="modalJoinInputPassword" placeholder="Password">
+              </div>
+              <button type="submit" class="btn btn-primary">Create an Account</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Production Javascript -->
     <script src="assets/scripts/build/production.min.js"></script>
 </body>
 

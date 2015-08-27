@@ -1,21 +1,26 @@
 // Affix nav
-$('nav').affix({
-  offset: {
-    top: $('header').height()
-  }
-});
-
-//Slide down dropdowns
-$(document).ready(function(){
-  $('.dropdown').on('show.bs.dropdown', function(e){
-    $(this).find('.dropdown-menu').first().stop(true, true).slideDown();
-  });
-  $('.dropdown').on('hide.bs.dropdown', function(e){
-    $(this).find('.dropdown-menu').first().stop(true, true).slideUp();
+$(function() {
+  $('nav').affix({
+    offset: {
+      top: $('header').height()
+    }
   });
 });
 
-//Toggle mobile toggle menu icon with cross
+//Slide down dropdowns on hover and click
+$(function($) {
+  $('.navbar .dropdown').hover(function() {
+      $(this).find('.dropdown-menu').first().stop(true, true).delay(250).slideDown();
+  }, function() {
+      $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp();
+  });
+
+  $('.navbar .dropdown > a').click(function(){
+      location.href = this.href;
+  });
+});
+
+//Toggle mobile menu icon to x on click
 $(function() {
   $('#navbar')
     .on('shown.bs.collapse', function() {

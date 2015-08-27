@@ -6325,6 +6325,9 @@ nav.affix {
   margin: 0;
   border: none;
 }
+#nav-table td {
+  width: 33%;
+}
 .navbar-collapse {
   padding: 0;
 }

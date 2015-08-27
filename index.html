@@ -37,32 +37,17 @@
             </div>
         </div>
     </header>
-    <nav class="navbar navbar-default navbar-static-top">
-        <div class="container-fluid">
+
+    <!--Desktop nav -->
+    <nav class="navbar navbar-default navbar-static-top hidden-xs hidden-sm">
+        <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <i class="icon-icons2"></i>
-                </button>
-                <a class="navbar-brand" href="#">
-                    <img src="images/logo-orange.png" alt="Yoga International" />
-                </a>
-                <button type="button" class="search navbar-toggle collapsed" style="float:right;line-height:10px;">
-                    <i class="icon-search"></i>
-                </button>
+              <a class="navbar-brand" href="#">
+                  <img src="images/logo-orange.png" alt="Yoga International" />
+              </a>
             </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <table id="nav-table" class="nav navbar-nav hidden-md hidden-lg table table-bordered text-center">
-                    <tr>
-                      <td>Yoga</td>
-                      <td>Classes</td>
-                    </tr>
-                    <tr>
-                      <td>Meditation</td>
-                      <td>Health</td>
-                    </tr>
-                </table>
-                <ul class="nav navbar-nav hidden-xs hidden-sm">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
                     <li class="hidden-lg"><a href="#">Yoga</i></a></li>
                     <li class="hidden-lg"><a href="#">Classes</i></a></li>
                     <li class="hidden-lg"><a href="#">Meditation</i></a></li>
@@ -119,6 +104,43 @@
         </div>
     </nav>
     
+    <!--Mobile nav -->
+    <nav class="navbar navbar-default navbar-static-top hidden-md hidden-lg">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="icon-icons2"></i>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo-orange.png" alt="Yoga International" />
+                </a>
+                <button type="button" class="search navbar-toggle collapsed" style="float:right;line-height:10px;">
+                    <i class="icon-search"></i>
+                </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <table id="nav-table" class="nav navbar-nav hidden-md hidden-lg table table-bordered text-center">
+                    <tr>
+                      <td>Search</td>
+                    </tr>
+                    <tr>
+                      <td>Yoga</td>
+                      <td>Classes</td>
+                      <td>Meditation</td>
+                    </tr>
+                    <tr>
+                      <td>Meditation</td>
+                      <td>Health</td>
+                      <td>Health</td>
+                    </tr>
+                </table>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+
+
     <!--Full Width Slider -->
     <div class="container-fluid">
       <div class="row">
